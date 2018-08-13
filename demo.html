@@ -15,6 +15,7 @@
       ol.multi-column li {float: left; width: 50%; margin-bottom: 10px;}
     </style>
 
+
   </head>
 
   <body>
@@ -33,10 +34,1403 @@
 This is the accompanying web page for the following paper:<br>
 
 <ul>
-<li>Anon<br>
+<li>Eita Nakamura, Kazuyoshi Yoshii<br>
 <strong>Statistical piano reduction controlling performance difficulty</strong><br>
-Manuscript submitted to <em>APSIPA Transaction</em>
+Manuscript submitted to <em>APSIPA Transactions on Signal and Information Processing</em>
 </ul>
+
+        <h2>Test data</h2>
+The musical pieces used for evaluating piano reduction methods (you can see musical scores below).<br><br>
+
+        <ol>
+<li> Tchaikovsky: ‘Danse des Mirlitons’ from the Nutcracker Suite (16 bars)
+<li> Bach: ‘Jesu, joy of man's desiring’ from Cantata No. 147 (17 bars)
+<li> Beethoven: Symphony No. 7, 1st movement (23 bars)
+<li> Dvorak: Symphony No. 9, 4th movement (18 bars)
+<li> Elgar: Pomp and Circumstance March No. 1 (32 bars)
+<li> Mussorgsky-Ravel: ‘Bydlo’ from Pictures at an Exhibition (29 bars)
+<li> Ravel: Bolero (18 bars)
+<li> Mozart: Symphony No. 40, 1st movement (42 bars)
+<li> Wagner: Prelude to Meistersinger (27 bars)
+<li> Brahms: Symphony No. 1, 4th movement (22 bars)
+        </ol>
+
+        <h2>Piano reduction results</h2>
+
+For each musical piece in the test data, we show piano reduction scores obtained by three methods (Iterated Fingering, Iterated Gaussian, and Iterated Distance) for three sets of target difficulty values (low, middle, and high difficulty). See the paper for details on the methods.
+
+
+        <h4><font color="#0000cc">1. Tchaikovsky: ‘Danse des Mirlitons’ from the Nutcracker Suite</font></h4>
+
+        <h5>・Original score (input)</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Condensed score</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/1_CondensedScore.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/1_CondensedScore.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/1_CondensedScore.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Melody and bass</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/1_MelodyBass.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/1_MelodyBass.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/1_MelodyBass.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+        <h5>・High difficulty</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Iterated Fingering</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/red_Fingering_40-40-50_1.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px; backgorund:white;" src="./pngs/red_Fingering_40-40-50_1.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/red_Fingering_40-40-50_1.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Iterated Gaussian</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/red_Gauss_40-40-50_1.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Gauss_40-40-50_1.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/red_Gauss_40-40-50_1.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:410px; width: 180px;">
+<font color="#941651">Iterated Distance</font>
+</div>
+<a style="position:absolute; top:20px; left:410px;"href="./pdfs/red_Random_40-40-50_1.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Random_40-40-50_1.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:500px;"href="./audio/red_Random_40-40-50_1.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+        <h5>・Middle difficulty</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Iterated Fingering</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/red_Fingering_30-30-40_1.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px; backgorund:white;" src="./pngs/red_Fingering_30-30-40_1.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/red_Fingering_30-30-40_1.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Iterated Gaussian</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/red_Gauss_30-30-40_1.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Gauss_30-30-40_1.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/red_Gauss_30-30-40_1.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:410px; width: 180px;">
+<font color="#941651">Iterated Distance</font>
+</div>
+<a style="position:absolute; top:20px; left:410px;"href="./pdfs/red_Random_30-30-40_1.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Random_30-30-40_1.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:500px;"href="./audio/red_Random_30-30-40_1.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+        <h5>・Low difficulty</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Iterated Fingering</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/red_Fingering_15-15-30_1.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px; backgorund:white;" src="./pngs/red_Fingering_15-15-30_1.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/red_Fingering_15-15-30_1.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Iterated Gaussian</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/red_Gauss_15-15-30_1.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Gauss_15-15-30_1.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/red_Gauss_15-15-30_1.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:410px; width: 180px;">
+<font color="#941651">Iterated Distance</font>
+</div>
+<a style="position:absolute; top:20px; left:410px;"href="./pdfs/red_Random_15-15-30_1.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Random_15-15-30_1.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:500px;"href="./audio/red_Random_15-15-30_1.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+
+        <h4><font color="#0000cc">2. Bach: ‘Jesu, joy of man's desiring’ from Cantata No. 147</font></h4>
+
+        <h5>・Original score (input)</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Condensed score</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/2_CondensedScore.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/2_CondensedScore.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/2_CondensedScore.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Melody and bass</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/2_MelodyBass.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/2_MelodyBass.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/2_MelodyBass.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+        <h5>・High difficulty</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Iterated Fingering</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/red_Fingering_40-40-50_2.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px; backgorund:white;" src="./pngs/red_Fingering_40-40-50_2.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/red_Fingering_40-40-50_2.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Iterated Gaussian</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/red_Gauss_40-40-50_2.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Gauss_40-40-50_2.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/red_Gauss_40-40-50_2.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:410px; width: 180px;">
+<font color="#941651">Iterated Distance</font>
+</div>
+<a style="position:absolute; top:20px; left:410px;"href="./pdfs/red_Random_40-40-50_2.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Random_40-40-50_2.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:500px;"href="./audio/red_Random_40-40-50_2.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+        <h5>・Middle difficulty</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Iterated Fingering</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/red_Fingering_30-30-40_2.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px; backgorund:white;" src="./pngs/red_Fingering_30-30-40_2.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/red_Fingering_30-30-40_2.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Iterated Gaussian</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/red_Gauss_30-30-40_2.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Gauss_30-30-40_2.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/red_Gauss_30-30-40_2.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:410px; width: 180px;">
+<font color="#941651">Iterated Distance</font>
+</div>
+<a style="position:absolute; top:20px; left:410px;"href="./pdfs/red_Random_30-30-40_2.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Random_30-30-40_2.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:500px;"href="./audio/red_Random_30-30-40_2.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+        <h5>・Low difficulty</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Iterated Fingering</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/red_Fingering_15-15-30_2.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px; backgorund:white;" src="./pngs/red_Fingering_15-15-30_2.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/red_Fingering_15-15-30_2.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Iterated Gaussian</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/red_Gauss_15-15-30_2.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Gauss_15-15-30_2.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/red_Gauss_15-15-30_2.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:410px; width: 180px;">
+<font color="#941651">Iterated Distance</font>
+</div>
+<a style="position:absolute; top:20px; left:410px;"href="./pdfs/red_Random_15-15-30_2.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Random_15-15-30_2.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:500px;"href="./audio/red_Random_15-15-30_2.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+
+        <h4><font color="#0000cc">3. Beethoven: Symphony No. 7, 1st movement</font></h4>
+
+        <h5>・Original score (input)</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Condensed score</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/3_CondensedScore.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/3_CondensedScore.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/3_CondensedScore.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Melody and bass</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/3_MelodyBass.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/3_MelodyBass.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/3_MelodyBass.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+        <h5>・High difficulty</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Iterated Fingering</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/red_Fingering_40-40-50_3.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px; backgorund:white;" src="./pngs/red_Fingering_40-40-50_3.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/red_Fingering_40-40-50_3.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Iterated Gaussian</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/red_Gauss_40-40-50_3.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Gauss_40-40-50_3.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/red_Gauss_40-40-50_3.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:410px; width: 180px;">
+<font color="#941651">Iterated Distance</font>
+</div>
+<a style="position:absolute; top:20px; left:410px;"href="./pdfs/red_Random_40-40-50_3.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Random_40-40-50_3.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:500px;"href="./audio/red_Random_40-40-50_3.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+        <h5>・Middle difficulty</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Iterated Fingering</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/red_Fingering_30-30-40_3.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px; backgorund:white;" src="./pngs/red_Fingering_30-30-40_3.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/red_Fingering_30-30-40_3.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Iterated Gaussian</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/red_Gauss_30-30-40_3.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Gauss_30-30-40_3.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/red_Gauss_30-30-40_3.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:410px; width: 180px;">
+<font color="#941651">Iterated Distance</font>
+</div>
+<a style="position:absolute; top:20px; left:410px;"href="./pdfs/red_Random_30-30-40_3.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Random_30-30-40_3.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:500px;"href="./audio/red_Random_30-30-40_3.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+        <h5>・Low difficulty</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Iterated Fingering</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/red_Fingering_15-15-30_3.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px; backgorund:white;" src="./pngs/red_Fingering_15-15-30_3.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/red_Fingering_15-15-30_3.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Iterated Gaussian</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/red_Gauss_15-15-30_3.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Gauss_15-15-30_3.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/red_Gauss_15-15-30_3.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:410px; width: 180px;">
+<font color="#941651">Iterated Distance</font>
+</div>
+<a style="position:absolute; top:20px; left:410px;"href="./pdfs/red_Random_15-15-30_3.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Random_15-15-30_3.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:500px;"href="./audio/red_Random_15-15-30_3.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+
+        <h4><font color="#0000cc">4. Dvorak: Symphony No. 9, 4th movement</font></h4>
+
+        <h5>・Original score (input)</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Condensed score</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/4_CondensedScore.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/4_CondensedScore.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/4_CondensedScore.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Melody and bass</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/4_MelodyBass.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/4_MelodyBass.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/4_MelodyBass.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+        <h5>・High difficulty</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Iterated Fingering</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/red_Fingering_40-40-50_4.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px; backgorund:white;" src="./pngs/red_Fingering_40-40-50_4.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/red_Fingering_40-40-50_4.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Iterated Gaussian</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/red_Gauss_40-40-50_4.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Gauss_40-40-50_4.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/red_Gauss_40-40-50_4.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:410px; width: 180px;">
+<font color="#941651">Iterated Distance</font>
+</div>
+<a style="position:absolute; top:20px; left:410px;"href="./pdfs/red_Random_40-40-50_4.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Random_40-40-50_4.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:500px;"href="./audio/red_Random_40-40-50_4.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+        <h5>・Middle difficulty</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Iterated Fingering</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/red_Fingering_30-30-40_4.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px; backgorund:white;" src="./pngs/red_Fingering_30-30-40_4.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/red_Fingering_30-30-40_4.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Iterated Gaussian</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/red_Gauss_30-30-40_4.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Gauss_30-30-40_4.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/red_Gauss_30-30-40_4.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:410px; width: 180px;">
+<font color="#941651">Iterated Distance</font>
+</div>
+<a style="position:absolute; top:20px; left:410px;"href="./pdfs/red_Random_30-30-40_4.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Random_30-30-40_4.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:500px;"href="./audio/red_Random_30-30-40_4.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+        <h5>・Low difficulty</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Iterated Fingering</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/red_Fingering_15-15-30_4.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px; backgorund:white;" src="./pngs/red_Fingering_15-15-30_4.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/red_Fingering_15-15-30_4.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Iterated Gaussian</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/red_Gauss_15-15-30_4.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Gauss_15-15-30_4.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/red_Gauss_15-15-30_4.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:410px; width: 180px;">
+<font color="#941651">Iterated Distance</font>
+</div>
+<a style="position:absolute; top:20px; left:410px;"href="./pdfs/red_Random_15-15-30_4.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Random_15-15-30_4.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:500px;"href="./audio/red_Random_15-15-30_4.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+
+        <h4><font color="#0000cc">5. Elgar: Pomp and Circumstance March No. 1</font></h4>
+
+        <h5>・Original score (input)</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Condensed score</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/5_CondensedScore.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/5_CondensedScore.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/5_CondensedScore.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Melody and bass</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/5_MelodyBass.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/5_MelodyBass.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/5_MelodyBass.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+        <h5>・High difficulty</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Iterated Fingering</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/red_Fingering_40-40-50_5.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px; backgorund:white;" src="./pngs/red_Fingering_40-40-50_5.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/red_Fingering_40-40-50_5.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Iterated Gaussian</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/red_Gauss_40-40-50_5.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Gauss_40-40-50_5.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/red_Gauss_40-40-50_5.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:410px; width: 180px;">
+<font color="#941651">Iterated Distance</font>
+</div>
+<a style="position:absolute; top:20px; left:410px;"href="./pdfs/red_Random_40-40-50_5.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Random_40-40-50_5.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:500px;"href="./audio/red_Random_40-40-50_5.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+        <h5>・Middle difficulty</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Iterated Fingering</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/red_Fingering_30-30-40_5.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px; backgorund:white;" src="./pngs/red_Fingering_30-30-40_5.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/red_Fingering_30-30-40_5.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Iterated Gaussian</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/red_Gauss_30-30-40_5.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Gauss_30-30-40_5.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/red_Gauss_30-30-40_5.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:410px; width: 180px;">
+<font color="#941651">Iterated Distance</font>
+</div>
+<a style="position:absolute; top:20px; left:410px;"href="./pdfs/red_Random_30-30-40_5.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Random_30-30-40_5.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:500px;"href="./audio/red_Random_30-30-40_5.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+        <h5>・Low difficulty</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Iterated Fingering</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/red_Fingering_15-15-30_5.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px; backgorund:white;" src="./pngs/red_Fingering_15-15-30_5.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/red_Fingering_15-15-30_5.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Iterated Gaussian</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/red_Gauss_15-15-30_5.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Gauss_15-15-30_5.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/red_Gauss_15-15-30_5.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:410px; width: 180px;">
+<font color="#941651">Iterated Distance</font>
+</div>
+<a style="position:absolute; top:20px; left:410px;"href="./pdfs/red_Random_15-15-30_5.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Random_15-15-30_5.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:500px;"href="./audio/red_Random_15-15-30_5.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+
+        <h4><font color="#0000cc">6. Mussorgsky-Ravel: ‘Bydlo’ from Pictures at an Exhibition</font></h4>
+
+        <h5>・Original score (input)</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Condensed score</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/6_CondensedScore.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/6_CondensedScore.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/6_CondensedScore.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Melody and bass</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/6_MelodyBass.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/6_MelodyBass.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/6_MelodyBass.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+        <h5>・High difficulty</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Iterated Fingering</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/red_Fingering_40-40-50_6.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px; backgorund:white;" src="./pngs/red_Fingering_40-40-50_6.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/red_Fingering_40-40-50_6.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Iterated Gaussian</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/red_Gauss_40-40-50_6.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Gauss_40-40-50_6.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/red_Gauss_40-40-50_6.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:410px; width: 180px;">
+<font color="#941651">Iterated Distance</font>
+</div>
+<a style="position:absolute; top:20px; left:410px;"href="./pdfs/red_Random_40-40-50_6.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Random_40-40-50_6.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:500px;"href="./audio/red_Random_40-40-50_6.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+        <h5>・Middle difficulty</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Iterated Fingering</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/red_Fingering_30-30-40_6.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px; backgorund:white;" src="./pngs/red_Fingering_30-30-40_6.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/red_Fingering_30-30-40_6.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Iterated Gaussian</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/red_Gauss_30-30-40_6.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Gauss_30-30-40_6.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/red_Gauss_30-30-40_6.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:410px; width: 180px;">
+<font color="#941651">Iterated Distance</font>
+</div>
+<a style="position:absolute; top:20px; left:410px;"href="./pdfs/red_Random_30-30-40_6.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Random_30-30-40_6.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:500px;"href="./audio/red_Random_30-30-40_6.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+        <h5>・Low difficulty</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Iterated Fingering</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/red_Fingering_15-15-30_6.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px; backgorund:white;" src="./pngs/red_Fingering_15-15-30_6.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/red_Fingering_15-15-30_6.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Iterated Gaussian</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/red_Gauss_15-15-30_6.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Gauss_15-15-30_6.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/red_Gauss_15-15-30_6.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:410px; width: 180px;">
+<font color="#941651">Iterated Distance</font>
+</div>
+<a style="position:absolute; top:20px; left:410px;"href="./pdfs/red_Random_15-15-30_6.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Random_15-15-30_6.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:500px;"href="./audio/red_Random_15-15-30_6.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+
+        <h4><font color="#0000cc">7. Ravel: Bolero</font></h4>
+
+        <h5>・Original score (input)</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Condensed score</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/7_CondensedScore.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/7_CondensedScore.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/7_CondensedScore.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Melody and bass</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/7_MelodyBass.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/7_MelodyBass.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/7_MelodyBass.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+        <h5>・High difficulty</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Iterated Fingering</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/red_Fingering_40-40-50_7.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px; backgorund:white;" src="./pngs/red_Fingering_40-40-50_7.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/red_Fingering_40-40-50_7.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Iterated Gaussian</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/red_Gauss_40-40-50_7.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Gauss_40-40-50_7.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/red_Gauss_40-40-50_7.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:410px; width: 180px;">
+<font color="#941651">Iterated Distance</font>
+</div>
+<a style="position:absolute; top:20px; left:410px;"href="./pdfs/red_Random_40-40-50_7.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Random_40-40-50_7.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:500px;"href="./audio/red_Random_40-40-50_7.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+        <h5>・Middle difficulty</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Iterated Fingering</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/red_Fingering_30-30-40_7.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px; backgorund:white;" src="./pngs/red_Fingering_30-30-40_7.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/red_Fingering_30-30-40_7.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Iterated Gaussian</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/red_Gauss_30-30-40_7.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Gauss_30-30-40_7.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/red_Gauss_30-30-40_7.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:410px; width: 180px;">
+<font color="#941651">Iterated Distance</font>
+</div>
+<a style="position:absolute; top:20px; left:410px;"href="./pdfs/red_Random_30-30-40_7.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Random_30-30-40_7.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:500px;"href="./audio/red_Random_30-30-40_7.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+        <h5>・Low difficulty</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Iterated Fingering</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/red_Fingering_15-15-30_7.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px; backgorund:white;" src="./pngs/red_Fingering_15-15-30_7.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/red_Fingering_15-15-30_7.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Iterated Gaussian</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/red_Gauss_15-15-30_7.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Gauss_15-15-30_7.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/red_Gauss_15-15-30_7.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:410px; width: 180px;">
+<font color="#941651">Iterated Distance</font>
+</div>
+<a style="position:absolute; top:20px; left:410px;"href="./pdfs/red_Random_15-15-30_7.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Random_15-15-30_7.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:500px;"href="./audio/red_Random_15-15-30_7.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+
+        <h4><font color="#0000cc">8. Mozart: Symphony No. 40, 1st movement</font></h4>
+
+        <h5>・Original score (input)</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Condensed score</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/8_CondensedScore.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/8_CondensedScore.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/8_CondensedScore.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Melody and bass</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/8_MelodyBass.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/8_MelodyBass.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/8_MelodyBass.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+        <h5>・High difficulty</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Iterated Fingering</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/red_Fingering_40-40-50_8.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px; backgorund:white;" src="./pngs/red_Fingering_40-40-50_8.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/red_Fingering_40-40-50_8.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Iterated Gaussian</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/red_Gauss_40-40-50_8.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Gauss_40-40-50_8.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/red_Gauss_40-40-50_8.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:410px; width: 180px;">
+<font color="#941651">Iterated Distance</font>
+</div>
+<a style="position:absolute; top:20px; left:410px;"href="./pdfs/red_Random_40-40-50_8.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Random_40-40-50_8.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:500px;"href="./audio/red_Random_40-40-50_8.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+        <h5>・Middle difficulty</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Iterated Fingering</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/red_Fingering_30-30-40_8.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px; backgorund:white;" src="./pngs/red_Fingering_30-30-40_8.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/red_Fingering_30-30-40_8.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Iterated Gaussian</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/red_Gauss_30-30-40_8.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Gauss_30-30-40_8.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/red_Gauss_30-30-40_8.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:410px; width: 180px;">
+<font color="#941651">Iterated Distance</font>
+</div>
+<a style="position:absolute; top:20px; left:410px;"href="./pdfs/red_Random_30-30-40_8.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Random_30-30-40_8.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:500px;"href="./audio/red_Random_30-30-40_8.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+        <h5>・Low difficulty</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Iterated Fingering</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/red_Fingering_15-15-30_8.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px; backgorund:white;" src="./pngs/red_Fingering_15-15-30_8.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/red_Fingering_15-15-30_8.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Iterated Gaussian</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/red_Gauss_15-15-30_8.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Gauss_15-15-30_8.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/red_Gauss_15-15-30_8.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:410px; width: 180px;">
+<font color="#941651">Iterated Distance</font>
+</div>
+<a style="position:absolute; top:20px; left:410px;"href="./pdfs/red_Random_15-15-30_8.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Random_15-15-30_8.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:500px;"href="./audio/red_Random_15-15-30_8.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+
+        <h4><font color="#0000cc">9. Wagner: Prelude to Meistersinger</font></h4>
+
+        <h5>・Original score (input)</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Condensed score</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/9_CondensedScore.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/9_CondensedScore.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/9_CondensedScore.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Melody and bass</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/9_MelodyBass.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/9_MelodyBass.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/9_MelodyBass.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+        <h5>・High difficulty</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Iterated Fingering</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/red_Fingering_40-40-50_9.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px; backgorund:white;" src="./pngs/red_Fingering_40-40-50_9.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/red_Fingering_40-40-50_9.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Iterated Gaussian</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/red_Gauss_40-40-50_9.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Gauss_40-40-50_9.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/red_Gauss_40-40-50_9.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:410px; width: 180px;">
+<font color="#941651">Iterated Distance</font>
+</div>
+<a style="position:absolute; top:20px; left:410px;"href="./pdfs/red_Random_40-40-50_9.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Random_40-40-50_9.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:500px;"href="./audio/red_Random_40-40-50_9.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+        <h5>・Middle difficulty</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Iterated Fingering</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/red_Fingering_30-30-40_9.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px; backgorund:white;" src="./pngs/red_Fingering_30-30-40_9.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/red_Fingering_30-30-40_9.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Iterated Gaussian</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/red_Gauss_30-30-40_9.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Gauss_30-30-40_9.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/red_Gauss_30-30-40_9.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:410px; width: 180px;">
+<font color="#941651">Iterated Distance</font>
+</div>
+<a style="position:absolute; top:20px; left:410px;"href="./pdfs/red_Random_30-30-40_9.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Random_30-30-40_9.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:500px;"href="./audio/red_Random_30-30-40_9.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+        <h5>・Low difficulty</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Iterated Fingering</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/red_Fingering_15-15-30_9.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px; backgorund:white;" src="./pngs/red_Fingering_15-15-30_9.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/red_Fingering_15-15-30_9.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Iterated Gaussian</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/red_Gauss_15-15-30_9.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Gauss_15-15-30_9.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/red_Gauss_15-15-30_9.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:410px; width: 180px;">
+<font color="#941651">Iterated Distance</font>
+</div>
+<a style="position:absolute; top:20px; left:410px;"href="./pdfs/red_Random_15-15-30_9.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Random_15-15-30_9.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:500px;"href="./audio/red_Random_15-15-30_9.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+
+        <h4><font color="#0000cc">10. Brahms: Symphony No. 1, 4th movement</font></h4>
+
+        <h5>・Original score (input)</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Condensed score</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/10_CondensedScore.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/10_CondensedScore.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/10_CondensedScore.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Melody and bass</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/10_MelodyBass.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/10_MelodyBass.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/10_MelodyBass.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+        <h5>・High difficulty</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Iterated Fingering</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/red_Fingering_40-40-50_10.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px; backgorund:white;" src="./pngs/red_Fingering_40-40-50_10.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/red_Fingering_40-40-50_10.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Iterated Gaussian</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/red_Gauss_40-40-50_10.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Gauss_40-40-50_10.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/red_Gauss_40-40-50_10.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:410px; width: 180px;">
+<font color="#941651">Iterated Distance</font>
+</div>
+<a style="position:absolute; top:20px; left:410px;"href="./pdfs/red_Random_40-40-50_10.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Random_40-40-50_10.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:500px;"href="./audio/red_Random_40-40-50_10.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+        <h5>・Middle difficulty</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Iterated Fingering</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/red_Fingering_30-30-40_10.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px; backgorund:white;" src="./pngs/red_Fingering_30-30-40_10.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/red_Fingering_30-30-40_10.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Iterated Gaussian</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/red_Gauss_30-30-40_10.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Gauss_30-30-40_10.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/red_Gauss_30-30-40_10.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:410px; width: 180px;">
+<font color="#941651">Iterated Distance</font>
+</div>
+<a style="position:absolute; top:20px; left:410px;"href="./pdfs/red_Random_30-30-40_10.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Random_30-30-40_10.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:500px;"href="./audio/red_Random_30-30-40_10.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+        <h5>・Low difficulty</h5>
+
+<div style="position: relative; width:600px; height:150px; top:0px; left0px; margin:0px; padding:0px;">
+
+<div style="position:absolute; top:0px; left:10px; width: 180px;">
+<font color="#941651">Iterated Fingering</font>
+</div>
+<a style="position:absolute; top:20px; left:10px;"href="./pdfs/red_Fingering_15-15-30_10.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px; backgorund:white;" src="./pngs/red_Fingering_15-15-30_10.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:100px;"href="./audio/red_Fingering_15-15-30_10.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:210px; width: 180px;">
+<font color="#941651">Iterated Gaussian</font>
+</div>
+<a style="position:absolute; top:20px; left:210px;"href="./pdfs/red_Gauss_15-15-30_10.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Gauss_15-15-30_10.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:300px;"href="./audio/red_Gauss_15-15-30_10.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+<div style="position:absolute; top:0px; left:410px; width: 180px;">
+<font color="#941651">Iterated Distance</font>
+</div>
+<a style="position:absolute; top:20px; left:410px;"href="./pdfs/red_Random_15-15-30_10.pdf" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./pngs/red_Random_15-15-30_10.png" width="80px" alt="">
+</a>
+<a style="position:absolute; top:40px; left:500px;"href="./audio/red_Random_15-15-30_10.mp3" target="_blank">
+<img style="margin: 0px 0px 0px 0px;" src="./images/Sound.png" width="30px" alt="">
+</a>
+
+</div>
+
+
+
 
       </section>
     </div>
@@ -44,7 +1438,7 @@ Manuscript submitted to <em>APSIPA Transaction</em>
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Maintained by Anon.　　　(Last updated: Unknown)</p>
+        <p class="copyright">Maintained by Eita Nakamura　(Last updated: Oct 2018)</p>
       </footer>
     </div>
 
